@@ -12,4 +12,10 @@ public interface QuoteRepository {
     Long create(Quote quote);
     void update(Quote quote);
     void delete(Quote quote);
+
+    Long count();
+
+    Long countDistinctSources();
+
+    Quote getLastQuote();
 }
